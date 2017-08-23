@@ -254,3 +254,54 @@ URL:`app/open/add_patient`
 |data|数据结果|Object|/|是|数据定义|
 |data.is_real_name|是否实名|String|/|是|N|
 |data.patient_id|患者ID|Object|/|是|2607|
+
+
+### 泉依需要提供的接口
+
+#### 请求
+
+URL:`泉依提供`
+
+请求方式: POST
+
+请求参数: form-data
+
+| 名称 | 说明 | 类型 | 长度 | 必要 | 参与Sign计算 |备注|
+| :-- | :-- | :-- | -- | -- | -- | :-- |
+|key_word|合作方标识|String|32|否|/|搜索关键词（可以搜索药品ID，药品名等）|
+|page_index|保留字段|String|32|否|/|页码|
+|page_size|签名时间戳|String|32|否|/|显示条数|
+
+
+#### 返回
+
+| 字段 | 说明 | 类型 | 长度 | 必要 |备注|
+| :-- | :-- | :-- | -- | -- | :-- |
+|ret|接口调用返回码|Integer|32bit|是|1: 成功, 其他: 错误码|
+|msg|接口调用结果消息|String|256|是|如果调用失败，这里有错误信息|
+|data|数据结果|Object|/|是|数据定义|
+|data.pageInfo|是否实名|Object|/|是|页码返回参数集合|
+|data.drugList|患者ID|Object(Array)|/|是|2607|
+
+
+* **页码对象**<a name="pageInfo"/>
+
+| 字段 | 说明 | 类型 | 长度 | 必要 |备注|
+| :-- | :-- | :-- | -- | -- | :-- |
+|totalPage|当前总条数|String|/|是|/|
+|pageSize|取条数|String|/|是|/|
+|totalCount|总条数|String|/|是|/|
+|pageIndex|页码|String|/|是|/|
+
+* **药品对象**<a name="drugList"/>
+
+| 字段 | 说明 | 类型 | 长度 | 必要 |备注|
+| :-- | :-- | :-- | -- | -- | :-- |
+|drug_code|药品ID|String|/|是|/|
+|drug_name|药品名称|String|/|是|/|
+|specification|规格|String|/|是|/|
+|drug_desc|泉依药品描述|String|/|是|/|
+|picture|图片地址|String|/|是|/|
+|brand|品牌|String|/|是|/|
+|price|价格|String|/|是|/|
+|detail_url|药品连接地址|String|/|是|/|
