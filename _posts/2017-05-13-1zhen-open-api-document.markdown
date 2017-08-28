@@ -302,8 +302,8 @@ URL:`泉依提供`
 |drug_code|药品ID|String|/|是|/|
 |drug_name|药品名称|String|/|是|/|
 |specification|规格|String|/|是|/|
-|drug_desc|泉依药品描述|String|/|是|/|
-|picture|图片地址|String|/|是|/|
+|drug_desc|泉依药品描述|String|/|是|接默认请填"暂无"|
+|picture|图片地址|String|/|是|接默认请填"#"|
 |brand|品牌|String|/|是|/|
 |price|价格|String|/|是|/|
-|detail_url|药品连接地址|String|/|是|/|
+|detail_url|药品连接地址|String|/|是|若无连接默认请填"#"|
