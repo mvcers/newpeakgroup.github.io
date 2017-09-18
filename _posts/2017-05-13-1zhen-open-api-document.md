@@ -297,7 +297,6 @@ URL:`泉依提供`
 |totalCount|总条数|String|/|是|/|
 |pageIndex|页码|String|/|是|/|
 
-
 * **药品对象**<a name="drugList"/>
 
 | 字段 | 说明 | 类型 | 长度 | 必要 |备注|
