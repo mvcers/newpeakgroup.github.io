@@ -244,8 +244,8 @@ URL:`app/open/add_patient`
 |name|姓名|String|/|是|否|姓名|
 |birthday|出生日期|String|/|是|否|时间格式2017-01-01|
 |sex|性别|String|/|是|否|F-女;M-男|
-|card_num|身份证号码|Integer|32bit|是|否|身份证号码|
-|is_self|是否本人<是否设置为默认就诊人>	|Integer|32bit|是|否|/|
+|card_num|身份证号码|String|32bit|是|否|身份证号码|
+|is_self|是否本人<是否设置为默认就诊人>0:非本人;1:本人|int|32bit|是|否|/|
 |mobile|注册用户的手机号码（不是患者的号码）|Integer|32bit|是|否|/|
 
 
