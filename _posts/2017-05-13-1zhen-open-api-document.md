@@ -309,3 +309,4 @@ URL:`泉依提供`
 |brand|品牌|String|/|是|/|
 |price|价格|String|/|是|/|
 |detail_url|药品连接地址|String|/|是|若无连接默认请填"#"|
+|store|库存数|String|/|否|0|
