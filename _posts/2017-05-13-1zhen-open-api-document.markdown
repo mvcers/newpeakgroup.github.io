@@ -275,7 +275,7 @@ URL:`<合作方提供>`
 |key_word|合作方标识|String|32|否|/|搜索关键词（可以搜索药品ID，药品名等）|
 |page_index|保留字段|String|32|否|/|页码|
 |page_size|签名时间戳|String|32|否|/|显示条数|
-
+|user_id|用户ID|String|/|是|/|
 
 #### 返回
 
@@ -296,7 +296,7 @@ URL:`<合作方提供>`
 |pageSize|取条数|String|/|是|/|
 |totalCount|总条数|String|/|是|/|
 |pageIndex|页码|String|/|是|/|
-|user_id|用户ID|String|/|是|/|
+
 
 * **药品对象**<a name="drugList"/>
 
