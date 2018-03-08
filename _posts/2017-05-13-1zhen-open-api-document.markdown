@@ -296,6 +296,7 @@ URL:`<合作方提供>`
 |pageSize|取条数|String|/|是|/|
 |totalCount|总条数|String|/|是|/|
 |pageIndex|页码|String|/|是|/|
+|user_id|用户ID|String|/|是|/|
 
 * **药品对象**<a name="drugList"/>
 
